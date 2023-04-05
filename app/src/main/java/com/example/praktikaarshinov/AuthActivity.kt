@@ -22,6 +22,7 @@ class AuthActivity : AppCompatActivity() {
         val authButton = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonLogin)
         val login = findViewById<EditText>(R.id.editTextLogin)
         val password = findViewById<EditText>(R.id.editTextPassword)
+        val registr:Button = findViewById(R.id.registrButton)
 
         authButton.setOnClickListener{
             Thread(Runnable {
@@ -64,6 +65,10 @@ class AuthActivity : AppCompatActivity() {
                     }
                 }
             }).start()
+        }
+        registr.setOnClickListener{
+            val intent = Intent(this@AuthActivity, RegActivity::class.java)
+            startActivity(intent)
         }
     }
 }

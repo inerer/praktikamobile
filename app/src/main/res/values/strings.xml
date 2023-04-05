@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PraktikaArshinov</string>
-    <string name="connectionString">http://192.168.0.219:8888</string>
+    <string name="connectionString">http://188.164.136.18:8888</string>
+    <string-array name="genders">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
 </resources>
